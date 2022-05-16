@@ -36,14 +36,14 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="fixed" style={{ background: "#339933" }}>
+    <AppBar position="fixed" style={{ background: "#FFA500" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 100 }}>
             <a className="homelink" href="/">
               <img
                 className="logo"
-                src="https://i.postimg.cc/wjRQTLLc/Coxlogo.png"
+                src="https://i.postimg.cc/4xf8S5Mp/Onzechain-logo-2.png"
               ></img>
             </a>
           </Box>
