@@ -18,6 +18,9 @@ const pages = [
   <Button variant="inherit" href="/contact">
     <p className="navlinks">contact</p>
   </Button>,
+    <Button variant="inherit" href="/contact">
+    <p className="navlinks">Test</p>
+  </Button>,
 ];
 
 const Navbar = () => {
