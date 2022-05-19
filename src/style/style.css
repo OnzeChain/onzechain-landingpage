@@ -1,0 +1,24 @@
+h1 {
+    font-weight: 500;
+}
+/* Question */
+.faq h2 {
+    font-weight: 400;
+}
+/* Answer */
+.faq p {
+    font-weight: 300;
+}
+
+a {
+    background-color: orange!important;
+}
+
+.nav-divider {
+    margin-top: 130px;
+} 
+
+.discord-button {
+    position: absolute;
+    bottom: 0;
+}
