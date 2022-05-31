@@ -1,6 +1,5 @@
 import React from "react";
 import {Grid, Button, Container, Paper} from "@mui/material"
-import "../style/style.css";
 import { FaDiscord, FaArrowRight } from "react-icons/fa";
 
 
@@ -9,7 +8,7 @@ const Community = () => {
     const StyledButton = ({button}) => {
         console.log(button)
         return(
-                <Button sx={{ borderRadius: '16px' }} href={button.url} fullWidth>
+                <Button sx={{ borderRadius: '16px', backgroundColor: 'orange' }} href={button.url} fullWidth>
                     <Grid container>
                         <Grid color="white" item xs={11}>           
                             <FaDiscord /> {button.name}
