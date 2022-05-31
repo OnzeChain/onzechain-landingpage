@@ -61,7 +61,7 @@ const Community = () => {
         return(
             <Grid key={2} container spacing={2}>
 
-                <Grid item xs={12}>
+                <Grid sx={{ color: 'darkorange' }}  item xs={12}>
                     Join the Conversation.
                 </Grid>
 
@@ -84,7 +84,7 @@ const Community = () => {
                     <Grid item xs={12}>
                         <h3>Community</h3>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid sx={{ color: 'orange' }} item xs={12}>
                         The OnzeChain community is an ecosystem of users, developers, designers, and educators
                     </Grid>
                     <br/>
