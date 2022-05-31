@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../pages/home";
 import Faq from "../pages/faq";
+import Community from "./Community";
+import TermsOfService from "../pages/terms-of-service";
 import Navbar from "../components/navbar";
 
 function App() {
@@ -9,6 +11,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/whitepaper" />
+        <Route path="/team" />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
     </BrowserRouter>
   );

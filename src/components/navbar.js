@@ -12,14 +12,20 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
 const pages = [
-  <Button variant="inherit" href="/about">
-    <p className="navlinks">about</p>
+  <Button variant="inherit" href="/whitepaper">
+    <p className="navlinks">whitepaper</p>
   </Button>,
-  <Button variant="inherit" href="/contact">
-    <p className="navlinks">contact</p>
+  <Button variant="inherit" href="/community">
+    <p className="navlinks">community</p>
   </Button>,
-    <Button variant="inherit" href="/contact">
-    <p className="navlinks">Test</p>
+  <Button variant="inherit" href="/faq">
+    <p className="navlinks">FAQ</p>
+  </Button>,
+  <Button variant="inherit" href="/team">
+    <p className="navlinks">Team</p>
+  </Button>,
+  <Button variant="contained" color="warning" href="launch to app">
+    <p className="navlinks">Launch app</p>
   </Button>,
 ];
 
@@ -39,7 +45,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="fixed" style={{ background: "#FFA500" }}>
+    <AppBar position="fixed" style={{ background: "#FFFFFF" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 100 }}>
