@@ -2,7 +2,6 @@ import React from "react";
 import {Grid, Button, Container, Paper} from "@mui/material"
 import "../style/style.css";
 import { FaDiscord, FaArrowRight } from "react-icons/fa";
-import { styled } from '@mui/material/styles';
 
 
 const Community = () => {
