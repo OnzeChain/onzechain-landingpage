@@ -1,17 +1,16 @@
 import React from "react";
 import {Grid, Button, Container, Paper} from "@mui/material"
-import { FaDiscord, FaArrowRight } from "react-icons/fa";
+import { FaDiscord, FaArrowRight, FaReddit, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 
 
 const Community = () => {
 
     const StyledButton = ({button}) => {
-        console.log(button)
         return(
                 <Button sx={{ borderRadius: '16px', backgroundColor: 'orange' }} href={button.url} fullWidth>
                     <Grid container>
                         <Grid color="white" item xs={11}>           
-                            <FaDiscord /> {button.name}
+                            {button.icon}  {button.name}
                         </Grid>
                         <Grid justifyContent='flex-end' color="white" item xs={1}>           
                             <FaArrowRight />
@@ -29,32 +28,38 @@ const Community = () => {
             {
                 'name': 'Discord',
                 'url': 'https://discord.com/',
-                'description': 'Ask questions and engage with the OnzeChain community.'
+                'description': 'Ask questions and engage with the OnzeChain community.',
+                'icon': <FaDiscord/>
             },
             {
                 'name': 'Reddit',
                 'url': 'https://reddit.com/',
-                'description': 'Contribute to wide-ranging OnzeChain discussions'
+                'description': 'Contribute to wide-ranging OnzeChain discussions',
+                'icon': <FaReddit/>
             },
             {
                 'name': 'Twitter',
                 'url': 'https://twitter.com/',
-                'description': 'Follow the latest news from OnzeChain'
+                'description': 'Follow the latest news from OnzeChain',
+                'icon': <FaTwitter/>
             },
             {
                 'name': 'Forum',
                 'url': 'https://twitter.com/',
-                'description': 'Contribute to wide-ranging OnzeChain discussions'
+                'description': 'Contribute to wide-ranging OnzeChain discussions',
+                'icon': <FaTwitter/>
             },
             {
                 'name': 'Github',
                 'url': 'https://github.com/OnzeChain',
-                'description': 'Check our repositories on Github!'
+                'description': 'Check our repositories on Github!',
+                'icon': <FaGithub/>
             },
             {
                 'name': 'Instagram',
                 'url': 'https://instagram.com',
-                'description': 'Follow the latest news from OnzeChain'
+                'description': 'Follow the latest news from OnzeChain',
+                'icon': <FaInstagram/>
             },
 
         ]
