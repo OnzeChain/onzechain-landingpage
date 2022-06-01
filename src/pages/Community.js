@@ -1,34 +1,12 @@
 import React from "react";
-import {Grid, Button, Container, Paper} from "@mui/material"
+import {Grid, Button, Container} from "@mui/material"
 import { FaDiscord, FaArrowRight, FaReddit, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 
 const Community = () => {
-  const StyledButton = ({ button }) => {
-    console.log(button);
-    return (
-      <Button
-        sx={{ borderRadius: "16px", backgroundColor: "orange" }}
-        href={button.url}
-        fullWidth
-      >
-        <Grid container>
-          <Grid color="white" item xs={11}>
-            <FaDiscord /> {button.name}
-          </Grid>
-          <Grid justifyContent="flex-end" color="white" item xs={1}>
-            <FaArrowRight />
-          </Grid>
-          <Grid color="white" item xs={12}>
-            {button.description}
-          </Grid>
-        </Grid>
-      </Button>
-    );
-  };
 
     const StyledButton = ({button}) => {
         return(
-                <Button sx={{ borderRadius: '16px', backgroundColor: 'orange' }} href={button.url} fullWidth>
+                <Button sx={{ borderRadius: '16px', backgroundColor: 'orange' }} variant="contained" color="warning" href={button.url} fullWidth>
                     <Grid container>
                         <Grid color="white" item xs={11}>           
                             {button.icon}  {button.name}
@@ -43,6 +21,8 @@ const Community = () => {
                 </Button>
         )
     }
+
+
 
     const Buttons = () => {
         const buttons = [
