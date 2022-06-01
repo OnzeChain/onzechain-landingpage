@@ -6,7 +6,16 @@ const Community = () => {
 
     const StyledButton = ({button}) => {
         return(
-                <Button sx={{ borderRadius: '16px', backgroundColor: 'orange' }} variant="contained" color="warning" href={button.url} fullWidth>
+                <Button sx={{ 
+                    borderRadius: '16px', 
+                    backgroundColor: 'orange',
+                    "&:hover": {
+                        background: "orange",
+                     }, 
+                  }} 
+                  variant="contained" 
+                  href={button.url} 
+                  fullWidth>
                     <Grid container>
                         <Grid color="white" item xs={11}>           
                             {button.icon}  {button.name}
