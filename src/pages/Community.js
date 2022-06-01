@@ -1,69 +1,74 @@
 import React from "react";
-import { Grid, Button, Container, Paper } from "@mui/material";
-import { FaDiscord, FaArrowRight } from "react-icons/fa";
+import {Grid, Button, Container} from "@mui/material"
+import { FaDiscord, FaArrowRight, FaReddit, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 
 const Community = () => {
-  const StyledButton = ({ button }) => {
-    console.log(button);
-    return (
-      <Button
-        sx={{ borderRadius: "16px", backgroundColor: "orange" }}
-        href={button.url}
-        fullWidth
-      >
-        <Grid container>
-          <Grid color="white" item xs={11}>
-            <FaDiscord /> {button.name}
-          </Grid>
-          <Grid justifyContent="flex-end" color="white" item xs={1}>
-            <FaArrowRight />
-          </Grid>
-          <Grid color="white" item xs={12}>
-            {button.description}
-          </Grid>
-        </Grid>
-      </Button>
-    );
-  };
 
-  const Buttons = () => {
-    const buttons = [
-      {
-        name: "Discord",
-        url: "https://discord.com/",
-        description: "Ask questions and engage with the OnzeChain community.",
-      },
-      {
-        name: "Reddit",
-        url: "https://reddit.com/",
-        description: "Contribute to wide-ranging OnzeChain discussions",
-      },
-      {
-        name: "Twitter",
-        url: "https://twitter.com/",
-        description: "Follow the latest news from OnzeChain",
-      },
-      {
-        name: "Forum",
-        url: "https://twitter.com/",
-        description: "Contribute to wide-ranging OnzeChain discussions",
-      },
-      {
-        name: "Github",
-        url: "https://github.com/OnzeChain",
-        description: "Check our repositories on Github!",
-      },
-      {
-        name: "Instagram",
-        url: "https://instagram.com",
-        description: "Follow the latest news from OnzeChain",
-      },
-    ];
-    return (
-      <Grid key={2} container spacing={2}>
-        <Grid sx={{ color: "darkorange" }} item xs={12}>
-          Join the Conversation.
-        </Grid>
+    const StyledButton = ({button}) => {
+        return(
+                <Button sx={{ borderRadius: '16px', backgroundColor: 'orange' }} variant="contained" color="warning" href={button.url} fullWidth>
+                    <Grid container>
+                        <Grid color="white" item xs={11}>           
+                            {button.icon}  {button.name}
+                        </Grid>
+                        <Grid justifyContent='flex-end' color="white" item xs={1}>           
+                            <FaArrowRight />
+                        </Grid>
+                        <Grid color="white" item xs={12}>           
+                            {button.description}
+                        </Grid>
+                    </Grid>  
+                </Button>
+        )
+    }
+
+
+
+    const Buttons = () => {
+        const buttons = [
+            {
+                'name': 'Discord',
+                'url': 'https://discord.com/',
+                'description': 'Ask questions and engage with the OnzeChain community.',
+                'icon': <FaDiscord/>
+            },
+            {
+                'name': 'Reddit',
+                'url': 'https://reddit.com/',
+                'description': 'Contribute to wide-ranging OnzeChain discussions',
+                'icon': <FaReddit/>
+            },
+            {
+                'name': 'Twitter',
+                'url': 'https://twitter.com/',
+                'description': 'Follow the latest news from OnzeChain',
+                'icon': <FaTwitter/>
+            },
+            {
+                'name': 'Forum',
+                'url': 'https://twitter.com/',
+                'description': 'Contribute to wide-ranging OnzeChain discussions',
+                'icon': <FaTwitter/>
+            },
+            {
+                'name': 'Github',
+                'url': 'https://github.com/OnzeChain',
+                'description': 'Check our repositories on Github!',
+                'icon': <FaGithub/>
+            },
+            {
+                'name': 'Instagram',
+                'url': 'https://instagram.com',
+                'description': 'Follow the latest news from OnzeChain',
+                'icon': <FaInstagram/>
+            },
+
+        ]
+        return(
+       <Grid key={2} container spacing={2}>
+          <Grid sx={{ color: "darkorange" }} item xs={12}>
+            Join the Conversation.
+          </Grid>
 
         {buttons.map((button) => (
           <Grid item xs={6}>

@@ -3,6 +3,7 @@ import "../style/home.css";
 import { Route } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -21,12 +22,10 @@ const Item = styled(Paper)(({ theme }) => ({
 const Home = () => {
   document.title = Route.title = "OnzeChain";
   return (
-    <html>
-      <div>
-        <div class="img-container">
+      <Box sx={{maxHeight: "100vh", overflow: "hidden"}}>
           <span className="fimg">
             <img
-              class="fruitimg"
+              className="fruitimg"
               src="https://i.postimg.cc/KjDP5G5Z/Grey-Scale.png"
               alt="Auto"
             />
@@ -55,9 +54,7 @@ const Home = () => {
               </div>
             </Grid>
           </Grid>
-        </div>
-      </div>
-    </html>
+      </Box>
   );
 };
 
