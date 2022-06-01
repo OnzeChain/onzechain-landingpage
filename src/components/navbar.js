@@ -24,8 +24,20 @@ const pages = [
   <Button variant="inherit" href="/team">
     <p className="navlinks">Team</p>
   </Button>,
-  <Button variant="contained" color="warning" href="launch to app">
-    <p className="navlinks">Launch app</p>
+  <Button
+    variant="contained"
+    sx={{
+      backgroundColor: "orange",
+      borderRadius: "40px",
+      "&:hover": {
+        background: "orange",
+      },
+    }}
+    href="https://dex-onzechain.web.app/#/"
+  >
+    <p style={{ color: "white" }} className="navlinks">
+      Launch app
+    </p>
   </Button>,
 ];
 
@@ -93,13 +105,13 @@ const Navbar = () => {
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
+              <Box
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "black", display: "block" }}
+                sx={{ m: 2, color: "black", display: "block" }}
               >
                 {page}
-              </Button>
+              </Box>
             ))}
           </Box>
         </Toolbar>
