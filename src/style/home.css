@@ -3,6 +3,7 @@ html {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   width: 100%;
   overflow: hidden; /* Hide scrollbars */
+  background-color: antiquewhite;
 }
 
 .navlinks {
