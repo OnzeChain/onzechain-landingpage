@@ -12,7 +12,10 @@ const Community = () => {
                     "&:hover": {
                         background: "orange",
                      }, 
-                  }} variant="contained" href={button.url} fullWidth>
+                  }} 
+                  variant="contained" 
+                  href={button.url} 
+                  fullWidth>
                     <Grid container>
                         <Grid color="white" item xs={11}>           
                             {button.icon}  {button.name}
