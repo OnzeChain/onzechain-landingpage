@@ -16,14 +16,14 @@ const Community = () => {
                   variant="contained" 
                   href={button.url} 
                   fullWidth>
-                    <Grid container>
-                        <Grid color="white" item xs={11}>           
+                    <Grid color="antiquewhite" container>
+                        <Grid item xs={11}>           
                             {button.icon}  {button.name}
                         </Grid>
-                        <Grid justifyContent='flex-end' color="white" item xs={1}>           
+                        <Grid justifyContent='flex-end' item xs={1}>           
                             <FaArrowRight />
                         </Grid>
-                        <Grid color="white" item xs={12}>           
+                        <Grid item xs={12}>           
                             {button.description}
                         </Grid>
                     </Grid>  
@@ -122,7 +122,7 @@ const Community = () => {
             </Grid>
 
             <Grid justifyContent={'flex-start'} item sx={1}>
-              <Card  sx={{ maxWidth: 200, color: 'white', borderRadius: '16px' }}>
+              <Card sx={{ maxWidth: 200, color: 'antiquewhite', borderRadius: '16px' }}>
                 <CardActionArea href="https://drive.google.com/file/d/1yoth8171H9rVPvtDc4PXUFVANw8qtEXW/view?usp=sharing" target="_blank">
                   <CardMedia
                     sx={{ backgroundColor: 'black' }}
@@ -135,7 +135,7 @@ const Community = () => {
                     <Typography gutterBottom variant="h6" component="div">
                       OnzeChain lockup
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2">
                       Commonly used OnzeChain branding.
                     </Typography>
                   </CardContent>
