@@ -122,7 +122,7 @@ const Community = () => {
             </Grid>
 
             <Grid justifyContent={'flex-start'} item sx={1}>
-              <Card  sx={{ maxWidth: 200, color: 'white' }}>
+              <Card  sx={{ maxWidth: 200, color: 'white', borderRadius: '16px' }}>
                 <CardActionArea href="https://drive.google.com/file/d/1yoth8171H9rVPvtDc4PXUFVANw8qtEXW/view?usp=sharing" target="_blank">
                   <CardMedia
                     sx={{ backgroundColor: 'black' }}
