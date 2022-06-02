@@ -1,5 +1,9 @@
 # Onzechain Landing Page
 
+### `npm install`
+
+Installs the node modules required for the app.
+
 ## Available Scripts
 
 In the project directory, you can run:
