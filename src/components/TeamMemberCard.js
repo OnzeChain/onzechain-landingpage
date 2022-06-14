@@ -3,8 +3,6 @@ import {
   Card,
   CardContent,
   Typography,
-  CardActions,
-  Button,
 } from "@mui/material";
 
 const TeamMemberCard = ({ name, role, imageURL }) => {

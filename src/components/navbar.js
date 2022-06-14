@@ -43,14 +43,14 @@ const pages = [
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [setAnchorElUser] = React.useState(null);
+  // const [setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -65,6 +65,7 @@ const Navbar = () => {
               <img
                 className="logo"
                 src="https://i.postimg.cc/4xf8S5Mp/Onzechain-logo-2.png"
+                alt="logo"
               ></img>
             </a>
           </Box>

@@ -11,10 +11,10 @@ function faq(props) {
         <Grid item xs={1}>
         </Grid>
         <Grid item xs={6}>
-        <h1>Frequantly asked questions</h1>
+        <h1>Frequently Asked Questions</h1>
         <div className="faq">
             <h2>What is OnzeChain?</h2>  
-            <p>OnzeChain is a protocol for providing liquidity and trading tokens on Polygon.</p>
+            <p>OnzeChain is a protocol for providing liquidity and trading tokens on the Polygon blockchain.</p>
             <hr/>
             <h2>What is the transaction fee?</h2>  
             <p>We wield a 0,1% transaction fee.</p>
@@ -23,7 +23,7 @@ function faq(props) {
             <p>Any Web3 Wallet, like MetaMask & TrustWallet for example.</p>
             <hr/>
             <h2>How do I swap tokens and provide liquidity?</h2>
-            <p>Head over to the OnzeChain interface and connect any Web3 wallet. Every transaction on Polgyon costs MATIC.</p>
+            <p>Head over to the OnzeChain interface and connect any Web3 wallet. Every transaction on Polygon costs MATIC.</p>
         </div>
         </Grid>
         <Grid item xs={5}>
