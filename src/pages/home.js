@@ -2,22 +2,22 @@ import React from "react";
 import "../style/home.css";
 import { Route } from "react-router-dom";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
+// import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
-import { styled } from "@mui/material/styles";
+// import { styled } from "@mui/material/styles";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
+// const Item = styled(Paper)(({ theme }) => ({
+//   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+//   ...theme.typography.body2,
+//   padding: theme.spacing(1),
+//   textAlign: "center",
+//   color: theme.palette.text.secondary,
+// }));
 
 const Home = () => {
   document.title = Route.title = "OnzeChain";
@@ -34,7 +34,7 @@ const Home = () => {
             <Grid item xs={2}>
               <div class="centered">
                 <h1 className="title">
-                  OnzeChain <span className="prot">PROTOCOL</span>
+                <span className="prot">OnzeChain</span> PROTOCOL
                 </h1>
                 <h2 className="txt">Swap every token, everywhere</h2>
                 <div className="list">
